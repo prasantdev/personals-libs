@@ -1,3 +1,7 @@
-let a = {${secrets.TEST}}
+//let a = {${secrets.TEST}}
 //let a = process.env.TEST;
-module.exports = a;
+if({${secrets.TEST}} = 1234) {
+  console.log('ye');
+  let b = 'yesa';
+                             }
+module.exports = b;
