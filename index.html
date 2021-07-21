@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image color change</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- <div class="img-container">
+    <img src="https://cdn.discordapp.com/attachments/581098316843188224/865461166473871370/image-header-mobile.jpg" alt="group" class="img" draggable="true">
+</div> -->
+<!-- <div id="div" draggable="true"></div> -->
+
+<svg width="331" height="242" viewBox="0 0 331 242" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <line x1="89.0104" y1="0.500108" x2="330.01" y2="5.50011" stroke="black"/>
+    <line x1="89.4261" y1="1.26156" x2="0.426134" y2="146.262" stroke="black"/>
+    <line x1="0.261449" y1="145.574" x2="119.261" y2="218.574" stroke="black"/>
+    <line x1="163.437" y1="0.757025" x2="297.437" y2="241.757" stroke="black"/>
+    </svg>
+    
+  <script>
+    window.onload = function(){
+      fetch(
+    `https://owlbot.info/api/v4/dictionary/apple`,
+    { headers: { Authorization: `Token ${{secrets.OWL_TOKEN}}` } }
+)
+.then(res => res.json())
+.then(r => console.log(r))
+    
+    }
+  </script>
+    
+    
+    
+    
+
+</body>
+</html>
